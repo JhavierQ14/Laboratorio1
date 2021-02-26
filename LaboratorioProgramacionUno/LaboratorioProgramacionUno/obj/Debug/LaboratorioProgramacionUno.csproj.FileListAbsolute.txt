@@ -1,0 +1,10 @@
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.exe.config
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.exe
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.pdb
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.csprojAssemblyReference.cache
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.FrmMenu.resources
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Properties.Resources.resources
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.csproj.GenerateResource.cache
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.csproj.CoreCompileInputs.cache
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.exe
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.pdb
