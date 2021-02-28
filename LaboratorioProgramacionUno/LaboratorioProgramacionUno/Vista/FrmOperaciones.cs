@@ -16,5 +16,10 @@ namespace LaboratorioProgramacionUno.Vista
         {
             InitializeComponent();
         }
+
+        private void FrmOperaciones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

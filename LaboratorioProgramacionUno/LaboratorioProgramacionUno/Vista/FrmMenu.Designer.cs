@@ -35,10 +35,10 @@ namespace LaboratorioProgramacionUno
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Location = new System.Drawing.Point(112, 246);
+            this.btnUsuarios.Location = new System.Drawing.Point(107, 177);
             this.btnUsuarios.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.Size = new System.Drawing.Size(269, 86);
+            this.btnUsuarios.Size = new System.Drawing.Size(269, 80);
             this.btnUsuarios.TabIndex = 0;
             this.btnUsuarios.Text = "Usuario";
             this.btnUsuarios.UseVisualStyleBackColor = true;
@@ -46,10 +46,10 @@ namespace LaboratorioProgramacionUno
             // 
             // btnAdmin
             // 
-            this.btnAdmin.Location = new System.Drawing.Point(424, 246);
+            this.btnAdmin.Location = new System.Drawing.Point(427, 177);
             this.btnAdmin.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(313, 86);
+            this.btnAdmin.Size = new System.Drawing.Size(313, 80);
             this.btnAdmin.TabIndex = 1;
             this.btnAdmin.Text = "Administrador";
             this.btnAdmin.UseVisualStyleBackColor = true;
@@ -57,12 +57,12 @@ namespace LaboratorioProgramacionUno
             // 
             // FrmMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 27F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 509);
+            this.ClientSize = new System.Drawing.Size(850, 474);
             this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.btnUsuarios);
-            this.Font = new System.Drawing.Font("Algerian", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Name = "FrmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
