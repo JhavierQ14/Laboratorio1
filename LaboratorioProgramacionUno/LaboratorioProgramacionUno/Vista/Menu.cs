@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaboratorioProgramacionUno.Vista;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,10 @@ namespace LaboratorioProgramacionUno
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
+            FrmLogin frml = new FrmLogin();
+            frml.Show();
+            this.Hide();
+
 
         }
 

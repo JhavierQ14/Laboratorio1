@@ -19,3 +19,4 @@ C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\Laborato
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.csproj.CoreCompileInputs.cache
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.exe
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.pdb
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLogin.resources
