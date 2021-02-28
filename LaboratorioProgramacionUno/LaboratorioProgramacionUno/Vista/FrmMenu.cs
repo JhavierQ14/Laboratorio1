@@ -21,6 +21,7 @@ namespace LaboratorioProgramacionUno
         private void Form1_Load(object sender, EventArgs e)
         {
 
+
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
@@ -28,7 +29,13 @@ namespace LaboratorioProgramacionUno
             FrmLogin frml = new FrmLogin();
             frml.Show();
             this.Hide();
+            int tipo = 0;
+            {
 
+            }
+
+
+            //MessageBox.Show("Bienvenido");
 
         }
 
@@ -36,5 +43,8 @@ namespace LaboratorioProgramacionUno
         {
 
         }
+
+        }
+       
     }
 }

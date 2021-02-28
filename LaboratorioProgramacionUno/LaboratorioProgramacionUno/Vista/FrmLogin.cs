@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LaboratorioProgramacionUno.Dominio;
+using LaboratorioProgramacionUno.Negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +37,35 @@ namespace LaboratorioProgramacionUno.Vista
         private void TxtP_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+
+            Login log = new Login();
+
+            log.NombreUsuario = txtUsuario.Text;
+            log.Password = txtContra.Text;
+
+            ClsLogin clsl = new ClsLogin();
+
+            int evalucion = clsl.acceso(log);
+
+            if (evalucion == 1)
+
+
+            {
+
+                MessageBox.Show("Welcome");
+                FrmMenu frmM = new FrmMenu();
+                frmM.Show();
+                this.Hide();
+
+            }
+            else {
+                MessageBox.Show("No se encuentra en el sistema");
+
+            }
         }
     }
 }

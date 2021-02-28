@@ -8,8 +8,8 @@ namespace LaboratorioProgramacionUno.Dominio
 {
     class UsuarioOperaciones
     {
-       const private double iva = 0.13;
-       const private String nombreDelProducto = "LAPTOP";
+     private double iva = 0.13;
+      private  String nombreDelProducto = "LAPTOP";
         private double precioDelProducto;
         private int cantidad;
 
