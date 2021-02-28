@@ -51,11 +51,18 @@
     <Compile Include="Dominio\AdmistradorOperaciones.cs" />
     <Compile Include="Dominio\Login.cs" />
     <Compile Include="Dominio\UsuarioOperaciones.cs" />
+    <Compile Include="Negocio\ClsLoginAdmin.cs" />
     <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vista\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FrmLoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FrmLoginAdmin.Designer.cs">
+      <DependentUpon>FrmLoginAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmMenu.cs">
       <SubType>Form</SubType>
@@ -74,6 +81,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FrmLoginAdmin.resx">
+      <DependentUpon>FrmLoginAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>

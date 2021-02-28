@@ -12,42 +12,21 @@ using System.Windows.Forms;
 
 namespace LaboratorioProgramacionUno.Vista
 {
-    public partial class FrmLogin : Form
+    public partial class FrmLoginAdmin : Form
     {
-        public FrmLogin()
+        public FrmLoginAdmin()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmLogin_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtP_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAcceder_Click(object sender, EventArgs e)
         {
-
             Login log = new Login();
 
             log.NombreUsuario = txtUsuario.Text;
             log.Password = txtContra.Text;
 
-            ClsLogin clsl = new ClsLogin();
+            ClsLoginAdmin clsl = new ClsLoginAdmin();
 
             int evalucion = clsl.acceso(log);
 
@@ -63,15 +42,11 @@ namespace LaboratorioProgramacionUno.Vista
                 this.Hide();
 
             }
-            else {
+            else
+            {
                 MessageBox.Show("No se encuentra en el sistema");
 
             }
-        }
-
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

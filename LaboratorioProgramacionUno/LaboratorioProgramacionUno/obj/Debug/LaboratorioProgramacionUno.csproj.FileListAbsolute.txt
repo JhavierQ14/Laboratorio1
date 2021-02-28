@@ -34,3 +34,4 @@ C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\Laborato
 C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmOperaciones.resources
 C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmOperaciones.resources
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmOperaciones.resources
+C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLoginAdmin.resources

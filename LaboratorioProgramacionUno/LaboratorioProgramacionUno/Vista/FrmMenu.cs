@@ -19,7 +19,9 @@ namespace LaboratorioProgramacionUno
         }
 
         private void Form1_Load(object sender, EventArgs e)
+
         {
+
 
 
         }
@@ -29,19 +31,20 @@ namespace LaboratorioProgramacionUno
             FrmLogin frml = new FrmLogin();
             frml.Show();
             this.Hide();
-            int tipo = 0;
             {
 
             }
-
-
-            //MessageBox.Show("Bienvenido");
 
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
+            FrmLoginAdmin frml = new FrmLoginAdmin();
+            frml.Show();
+            this.Hide();           
+            {
 
+            }
         }
 
     }
