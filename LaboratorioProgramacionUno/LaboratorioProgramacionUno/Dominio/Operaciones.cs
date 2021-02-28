@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgramacionUno.Dominio
 {
-    class Usuarios
+    class Operaciones
     {
+        private Double Iva;
+        private String NombreDelProducto;
+        private Double PrecioDelProducto;
+        private int Cantidad;
+
     }
-}
+}  

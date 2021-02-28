@@ -46,7 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Usuarios.cs" />
+    <Compile Include="DAO\ClsListaAdministradores.cs" />
+    <Compile Include="DAO\ClsListUsuarios.cs" />
+    <Compile Include="Dominio\Login.cs" />
+    <Compile Include="Dominio\Operaciones.cs" />
     <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,7 +68,7 @@
     <Compile Include="Vista\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Negocio\ClsUsuarios.cs" />
+    <Compile Include="Negocio\ClsLogin.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Vista\FrmLogin.resx">
@@ -96,8 +99,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DAO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
