@@ -35,21 +35,46 @@ namespace LaboratorioProgramacionUno.Vista
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            AdministradorOperaciones administrador = new AdministradorOperaciones();
-            ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+            //try
+            //{
 
-            administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
-            administrador.Cantidad = Convert.ToInt32(value: txtCantidad.Text);
-            administrador.Iva = Convert.ToDouble(value: txtIva.Text);
+            double multiplicarCantidad;
 
-            Double resultado1 = cls1.cal1(administrador);
-            lblTsinIva.Text = resultado1.ToString();
-           // lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
+            multiplicarCantidad = Convert.ToDouble(txtPproducto.Text) * Convert.ToDouble(txtCantidad.Text);
+
+            lblTsinIva.Text = multiplicarCantidad.ToString("0.00");
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("TUS DATOS NO SON NUMERICOS REVISA" + ex.ToString());
+
+            //AdministradorOperaciones administrador = new AdministradorOperaciones();
+            //ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+
+            //administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+            //administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+            //Double resultado1 = cls1.cal1(administrador);
+            //lblTsinIva.Text = resultado1.ToString();
+            //lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
+
+            double sumarIva;
+
+            sumarIva = (Convert.ToDouble(txtPproducto.Text) * Convert.ToDouble(txtCantidad.Text)) + Convert.ToDouble(txtIva.Text);
+
+            lblTotalIniacial.Text = sumarIva.ToString("0.00");
+
+
+            String nombre;
+            nombre = txtNproducto.Text;
+            lblNombreProducto.Text = nombre;
+
+            //double iva;
+            //iva = Convert.ToDouble(txtIva.Text);
+            //lblMostrarIva.Text = iva.ToString ;
 
 
         }
-
-
 
 
         private void label2_Click(object sender, EventArgs e)

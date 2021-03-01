@@ -11,11 +11,11 @@ namespace LaboratorioProgramacionUno.Dominio
         private double iva;
         private String nombreDelProducto;
         private double precioDelProducto;
-        private int cantidad;
+        private double cantidad;
 
         public double Iva { get => iva; set => iva = value; }
         public string NombreDelProducto { get => nombreDelProducto; set => nombreDelProducto = value; }
         public double PrecioDelProducto { get => precioDelProducto; set => precioDelProducto = value; }
-        public int Cantidad { get => cantidad; set => cantidad = value; }
+        public double Cantidad { get => cantidad; set => cantidad = value; }
     }
 }
