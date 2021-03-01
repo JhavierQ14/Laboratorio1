@@ -13,7 +13,7 @@ namespace LaboratorioProgramacionUno.Negocio
 
         public Double cal1(AdministradorOperaciones administrador)
         {
-            Double total1 = (administrador.Iva * administrador.Cantidad);
+            Double total1 = (administrador.PrecioDelProducto * administrador.Cantidad);
 
             return total1;
         }

@@ -255,6 +255,7 @@ namespace LaboratorioProgramacionUno.Vista
             this.btnCalcular.TabIndex = 22;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // Column1
             // 
