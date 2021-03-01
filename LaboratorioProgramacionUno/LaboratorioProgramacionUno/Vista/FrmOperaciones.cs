@@ -85,23 +85,35 @@ namespace LaboratorioProgramacionUno.Vista
 
                 if (resultado1 <= 50)
                 {
-                    
+                    double totalFinal;
+                    totalFinal = Convert.ToDouble(resultado1);
+                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+
                 }
                 else if (resultado1 >= 50 && resultado1 < 100)
                 {
-                    label1.Text = "Regular";
+                    double totalFinal;
+                    totalFinal = Convert.ToDouble(resultado1) - 0.05;
+                    lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
                 else if (resultado1 >= 100 && resultado1 < 101)
                 {
-                    label1.Text = "bueno";
+                    double totalFinal;
+                    totalFinal = Convert.ToDouble(resultado1) - 0.10;
+                    lblTotalFinal.Text = totalFinal.ToString("0.00");
                 }
                 else if (resultado1 >= 101 && resultado1 < 150)
                 {
-                    label1.Text = "exelente";
+                    double totalFinal;
+                    totalFinal = Convert.ToDouble(resultado1) - 0.20;
+                    lblTotalFinal.Text = totalFinal.ToString("0.00");
                 }
                 else
                 {
+                    double totalFinal;
+                    totalFinal = Convert.ToDouble(resultado1) - 0.50;
+                    lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
             }
