@@ -37,51 +37,51 @@ namespace LaboratorioProgramacionUno.Vista
         {
 
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+                UsuarioOperaciones administrador = new UsuarioOperaciones();
+                ClsOperacionUsuario cls1 = new ClsOperacionUsuario();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
-                double resultado1 = cls1.cal1(administrador);
+                double resultado1 = cls1.ca1(administrador);
                 lblTsinIva.Text = resultado1.ToString("0.00");
             }
 
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls2 = new ClsOperacionAdministrador();
+                UsuarioOperaciones administrador = new UsuarioOperaciones();
+                ClsOperacionUsuario cls2 = new ClsOperacionUsuario();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
-                double resultado1 = cls2.cal2(administrador);
+                double resultado1 = cls2.ca2(administrador);
                 lblTotalIniacial.Text = resultado1.ToString("0.00");
             }
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls3 = new ClsOperacionAdministrador();
+                UsuarioOperaciones administrador = new UsuarioOperaciones();
+                ClsOperacionUsuario cls3 = new ClsOperacionUsuario();
 
                 administrador.NombreDelProducto = Convert.ToString(value: txtNproducto.Text);
-                String resultado1 = cls3.cal3(administrador);
+                String resultado1 = cls3.ca3(administrador);
                 lblNombreProducto.Text = resultado1.ToString();
             }
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls4 = new ClsOperacionAdministrador();
+                UsuarioOperaciones administrador = new UsuarioOperaciones();
+                ClsOperacionUsuario cls4 = new ClsOperacionUsuario();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
-                double resultado1 = cls4.cal4(administrador);
+                double resultado1 = cls4.ca4(administrador);
                 lblIvaAgregar.Text = resultado1.ToString("0.00");
             }
 
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls5 = new ClsOperacionAdministrador();
+                UsuarioOperaciones administrador = new UsuarioOperaciones();
+                ClsOperacionUsuario cls5 = new ClsOperacionUsuario();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
-                double resultado1 = cls5.cal2(administrador);
+                double resultado1 = cls5.ca2(administrador);
 
                 if (resultado1 <= 50)
                 {
@@ -118,17 +118,6 @@ namespace LaboratorioProgramacionUno.Vista
                 }
             }
 
-
-
-
-
-            //try
-            //{
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("TUS DATOS NO SON NUMERICOS REVISA" + ex.ToString());
-            //lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
         }
 
 

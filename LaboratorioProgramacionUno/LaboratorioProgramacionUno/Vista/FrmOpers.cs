@@ -43,13 +43,13 @@ namespace LaboratorioProgramacionUno.Vista
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             {
-               // UsuarioOperaciones = new UsuarioOperaciones();
-                //ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
 
-                //administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
-                //administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
-                //double resultado1 = cls1.cal1(administrador);
-                //lblTsinIva.Text = resultado1.ToString("0.00");
+                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+                double resultado1 = cls1.cal1(administrador);
+                lblTsinIva.Text = resultado1.ToString("0.00");
             }
 
             {
@@ -122,8 +122,6 @@ namespace LaboratorioProgramacionUno.Vista
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
-
-
             }
 
         }
