@@ -10,8 +10,7 @@ namespace LaboratorioProgramacionUno.Negocio
     class ClsOperacionUsuario
     {
 
-        //public const double iva = 0.13;
-        //public const String nombreDelProducto = "LAPTOP";
+        
 
         public Double ca1(UsuarioOperaciones operacion )
         {

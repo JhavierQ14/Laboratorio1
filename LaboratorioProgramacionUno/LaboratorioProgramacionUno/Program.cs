@@ -17,7 +17,7 @@ namespace LaboratorioProgramacionUno
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmOperaciones());
+            Application.Run(new FrmMenu());
         }
     }
 }

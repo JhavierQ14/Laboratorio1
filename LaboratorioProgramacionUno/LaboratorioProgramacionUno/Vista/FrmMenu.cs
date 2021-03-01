@@ -28,7 +28,7 @@ namespace LaboratorioProgramacionUno
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            FrmLogin frml = new FrmLogin();
+            FrmLoginUsuario frml = new FrmLoginUsuario();
             frml.Show();
             this.Hide();
             {

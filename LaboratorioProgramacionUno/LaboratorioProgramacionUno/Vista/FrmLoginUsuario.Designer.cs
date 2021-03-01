@@ -1,7 +1,7 @@
 ﻿
 namespace LaboratorioProgramacionUno.Vista
 {
-    partial class FrmLogin
+    partial class FrmLoginUsuario
     {
         /// <summary>
         /// Required designer variable.

@@ -12,17 +12,18 @@ using System.Windows.Forms;
 
 namespace LaboratorioProgramacionUno.Vista
 {
-    public partial class FrmOperaciones : Form
+    public partial class FrmOpers : Form
     {
-        public FrmOperaciones()
+        public FrmOpers()
         {
             InitializeComponent();
+
+
         }
-        public String nombrePersona;
-        private void FrmOperaciones_Load(object sender, EventArgs e)
+        public string namePerson;
+        private void FrmOpers_Load(object sender, EventArgs e)
         {
-           
-            lblMostrarUser.Text = nombrePersona;
+            lblMostrarUser.Text = namePerson;
 
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MENOR o IGUAL 50 NO TENDRA DESCUENTO", "<=50");
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 50 Y MENOR QUE 100 TENDRA UN DESUENTO DEL 0.05 ", ">50 and <100");
@@ -30,20 +31,25 @@ namespace LaboratorioProgramacionUno.Vista
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL 101 Y MENOR QUE 150 TENDRA UN DESUENTO DEL 0.20 ", ">101 and <150");
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 150 TENDRA UN DESUENTO DEL 0.50 ", ">150");
 
+            {
+                txtIva.Enabled = false;
+                txtIva.Text = "0.13";
+                txtNproducto.Enabled = false;
+                txtNproducto.Text = "Laptop";
+            }
         }
-
+        
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-
             {
-                AdministradorOperaciones administrador = new AdministradorOperaciones();
-                ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+               // UsuarioOperaciones = new UsuarioOperaciones();
+                //ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
 
-                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
-                administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
-                double resultado1 = cls1.cal1(administrador);
-                lblTsinIva.Text = resultado1.ToString("0.00");
+                //administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                //administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+                //double resultado1 = cls1.cal1(administrador);
+                //lblTsinIva.Text = resultado1.ToString("0.00");
             }
 
             {
@@ -109,32 +115,27 @@ namespace LaboratorioProgramacionUno.Vista
                     totalFinal = Convert.ToDouble(resultado1) - 0.20;
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
                 }
-                else 
+                else
                 {
                     double totalFinal;
                     totalFinal = Convert.ToDouble(resultado1) - 0.50;
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
+
+
             }
 
-
-
-
-
-            //try
-            //{
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("TUS DATOS NO SON NUMERICOS REVISA" + ex.ToString());
-            //lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
         }
-
 
         private void label2_Click(object sender, EventArgs e)
         {
- 
+
+        }
+
+        private void txtIva_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

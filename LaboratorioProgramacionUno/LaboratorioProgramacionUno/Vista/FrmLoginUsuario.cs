@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace LaboratorioProgramacionUno.Vista
 {
-    public partial class FrmLogin : Form
+    public partial class FrmLoginUsuario : Form
     {
-        public FrmLogin()
+        public FrmLoginUsuario()
         {
             InitializeComponent();
         }
@@ -57,8 +57,8 @@ namespace LaboratorioProgramacionUno.Vista
             {
 
                 MessageBox.Show("Welcome");
-                FrmOperaciones frmM = new FrmOperaciones();
-                frmM.nombrePersona = txtUsuario.Text;
+                FrmOpers frmM = new FrmOpers();
+                frmM.namePerson = txtUsuario.Text;
                 frmM.Show();
                 this.Hide();
 
