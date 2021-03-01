@@ -36,10 +36,11 @@ namespace LaboratorioProgramacionUno.Vista
             {
 
                 MessageBox.Show("Welcome");
-
                 FrmOperaciones frmM = new FrmOperaciones();
+                frmM.nombrePersona = txtUsuario.Text;
                 frmM.Show();
                 this.Hide();
+
 
             }
             else
@@ -47,6 +48,11 @@ namespace LaboratorioProgramacionUno.Vista
                 MessageBox.Show("No se encuentra en el sistema");
 
             }
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

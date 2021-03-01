@@ -38,7 +38,8 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             // btnAcceder
             // 
-            this.btnAcceder.Location = new System.Drawing.Point(344, 357);
+            this.btnAcceder.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAcceder.Location = new System.Drawing.Point(339, 371);
             this.btnAcceder.Name = "btnAcceder";
             this.btnAcceder.Size = new System.Drawing.Size(114, 36);
             this.btnAcceder.TabIndex = 9;
@@ -48,36 +49,41 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(290, 277);
+            this.txtContra.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContra.Location = new System.Drawing.Point(290, 274);
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '#';
-            this.txtContra.Size = new System.Drawing.Size(220, 20);
+            this.txtContra.Size = new System.Drawing.Size(220, 32);
             this.txtContra.TabIndex = 8;
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(290, 128);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(220, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(220, 32);
             this.txtUsuario.TabIndex = 7;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // lblC
             // 
             this.lblC.AutoSize = true;
-            this.lblC.Location = new System.Drawing.Point(364, 227);
+            this.lblC.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC.Location = new System.Drawing.Point(302, 227);
             this.lblC.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(61, 13);
+            this.lblC.Size = new System.Drawing.Size(104, 25);
             this.lblC.TabIndex = 6;
             this.lblC.Text = "Contraseña";
             // 
             // LblAdmin
             // 
             this.LblAdmin.AutoSize = true;
-            this.LblAdmin.Location = new System.Drawing.Point(364, 57);
+            this.LblAdmin.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAdmin.Location = new System.Drawing.Point(302, 57);
             this.LblAdmin.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.LblAdmin.Name = "LblAdmin";
-            this.LblAdmin.Size = new System.Drawing.Size(43, 13);
+            this.LblAdmin.Size = new System.Drawing.Size(73, 25);
             this.LblAdmin.TabIndex = 5;
             this.LblAdmin.Text = "Usuario";
             // 

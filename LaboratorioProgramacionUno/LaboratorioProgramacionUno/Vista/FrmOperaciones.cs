@@ -18,9 +18,12 @@ namespace LaboratorioProgramacionUno.Vista
         {
             InitializeComponent();
         }
-
+        public String nombrePersona;
         private void FrmOperaciones_Load(object sender, EventArgs e)
         {
+           
+            lblMostrarUser.Text = nombrePersona;
+
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MENOR o IGUAL 50 NO TENDRA DESCUENTO", "<=50");
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 50 Y MENOR QUE 100 TENDRA UN DESUENTO DEL 0.05 ", ">50 and <100");
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL A 100 O MENOR QUE 101 TENDRA UN DESUENTO DEL 0.10 ", ">= 100 and <101");
@@ -28,6 +31,7 @@ namespace LaboratorioProgramacionUno.Vista
             dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 150 TENDRA UN DESUENTO DEL 0.50 ", ">150");
 
         }
+
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
@@ -39,6 +43,11 @@ namespace LaboratorioProgramacionUno.Vista
             Double resultado1 = cls1.cal1(administrador);
             lblTsinIva.Text = resultado1.ToString();
            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+ 
         }
     }
 }

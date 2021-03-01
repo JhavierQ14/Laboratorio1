@@ -33,6 +33,8 @@ namespace LaboratorioProgramacionUno.Vista
             this.label2 = new System.Windows.Forms.Label();
             this.lblMostrarUser = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMostrarIva = new System.Windows.Forms.Label();
             this.lblNproducto = new System.Windows.Forms.Label();
             this.lblPproducto = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@ namespace LaboratorioProgramacionUno.Vista
             this.label16 = new System.Windows.Forms.Label();
             this.lblTotalFinal = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +76,7 @@ namespace LaboratorioProgramacionUno.Vista
             this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuario actual";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblMostrarUser
             // 
@@ -97,6 +98,16 @@ namespace LaboratorioProgramacionUno.Vista
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(807, 125);
             this.dataGridView1.TabIndex = 3;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ACCION";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "REGLA";
+            this.Column2.Name = "Column2";
             // 
             // lblMostrarIva
             // 
@@ -256,16 +267,6 @@ namespace LaboratorioProgramacionUno.Vista
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ACCION";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "REGLA";
-            this.Column2.Name = "Column2";
             // 
             // FrmOperaciones
             // 
