@@ -33,8 +33,6 @@ namespace LaboratorioProgramacionUno.Vista
             this.label2 = new System.Windows.Forms.Label();
             this.lblMostrarUser = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblMostrarIva = new System.Windows.Forms.Label();
             this.lblNproducto = new System.Windows.Forms.Label();
             this.lblPproducto = new System.Windows.Forms.Label();
@@ -54,6 +52,8 @@ namespace LaboratorioProgramacionUno.Vista
             this.label16 = new System.Windows.Forms.Label();
             this.lblTotalFinal = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,24 +88,15 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(57, 111);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 111);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 125);
+            this.dataGridView1.Size = new System.Drawing.Size(807, 125);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.Name = "Column2";
             // 
             // lblMostrarIva
             // 
@@ -265,6 +256,16 @@ namespace LaboratorioProgramacionUno.Vista
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ACCION";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "REGLA";
+            this.Column2.Name = "Column2";
+            // 
             // FrmOperaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -294,6 +295,7 @@ namespace LaboratorioProgramacionUno.Vista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmOperaciones";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmOperaciones";
             this.Load += new System.EventHandler(this.FrmOperaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -326,8 +328,8 @@ namespace LaboratorioProgramacionUno.Vista
         private System.Windows.Forms.Label lblTotalIniacial;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblTotalFinal;
+        private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.Button btnCalcular;
     }
 }

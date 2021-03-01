@@ -48,10 +48,11 @@
   <ItemGroup>
     <Compile Include="DAO\ClsListaAdministradores.cs" />
     <Compile Include="DAO\ClsListUsuarios.cs" />
-    <Compile Include="Dominio\AdmistradorOperaciones.cs" />
+    <Compile Include="Dominio\AdministradorOperaciones.cs" />
     <Compile Include="Dominio\Login.cs" />
     <Compile Include="Dominio\UsuarioOperaciones.cs" />
     <Compile Include="Negocio\ClsLoginAdmin.cs" />
+    <Compile Include="Negocio\ClsOperacionAdministrador.cs" />
     <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>

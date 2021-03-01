@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgramacionUno.Dominio
 {
-    class AdmistradorOperaciones
+    class AdministradorOperaciones
     {
         private double iva;
         private String nombreDelProducto;
