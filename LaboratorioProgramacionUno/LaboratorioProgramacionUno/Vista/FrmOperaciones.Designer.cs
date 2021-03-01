@@ -316,8 +316,6 @@ namespace LaboratorioProgramacionUno.Vista
         private System.Windows.Forms.Label lblNproducto;
         private System.Windows.Forms.Label lblPproducto;
         private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.TextBox txtIva;
-        private System.Windows.Forms.TextBox txtNproducto;
         private System.Windows.Forms.TextBox txtPproducto;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label8;
@@ -333,5 +331,7 @@ namespace LaboratorioProgramacionUno.Vista
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        public System.Windows.Forms.TextBox txtIva;
+        public System.Windows.Forms.TextBox txtNproducto;
     }
 }

@@ -47,7 +47,7 @@ namespace LaboratorioProgramacionUno.Vista
             log.NombreUsuario = txtUsuario.Text;
             log.Password = txtContra.Text;
 
-            ClsLogin clsl = new ClsLogin();
+            ClsLoginUser clsl = new ClsLoginUser();
 
             int evalucion = clsl.acceso(log);
 

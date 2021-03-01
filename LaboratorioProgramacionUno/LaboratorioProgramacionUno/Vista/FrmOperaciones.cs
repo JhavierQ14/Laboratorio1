@@ -35,45 +35,88 @@ namespace LaboratorioProgramacionUno.Vista
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+
+            {
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
+
+                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+                double resultado1 = cls1.cal1(administrador);
+                lblTsinIva.Text = resultado1.ToString("0.00");
+            }
+
+            {
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls2 = new ClsOperacionAdministrador();
+
+                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+                administrador.Iva = Convert.ToDouble(value: txtIva.Text);
+                double resultado1 = cls2.cal2(administrador);
+                lblTotalIniacial.Text = resultado1.ToString("0.00");
+            }
+            {
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls3 = new ClsOperacionAdministrador();
+
+                administrador.NombreDelProducto = Convert.ToString(value: txtNproducto.Text);
+                String resultado1 = cls3.cal3(administrador);
+                lblNombreProducto.Text = resultado1.ToString();
+            }
+            {
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls4 = new ClsOperacionAdministrador();
+
+                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                administrador.Iva = Convert.ToDouble(value: txtIva.Text);
+                double resultado1 = cls4.cal4(administrador);
+                lblIvaAgregar.Text = resultado1.ToString("0.00");
+            }
+
+            {
+                AdministradorOperaciones administrador = new AdministradorOperaciones();
+                ClsOperacionAdministrador cls5 = new ClsOperacionAdministrador();
+
+                administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
+                administrador.Iva = Convert.ToDouble(value: txtIva.Text);
+                double resultado1 = cls5.cal2(administrador);
+
+                if (resultado1 <= 50)
+                {
+                    
+                }
+                else if (resultado1 >= 50 && resultado1 < 100)
+                {
+                    label1.Text = "Regular";
+
+                }
+                else if (resultado1 >= 100 && resultado1 < 101)
+                {
+                    label1.Text = "bueno";
+                }
+                else if (resultado1 >= 101 && resultado1 < 150)
+                {
+                    label1.Text = "exelente";
+                }
+                else
+                {
+
+                }
+            }
+
+
+
+
+
             //try
             //{
-
-            double multiplicarCantidad;
-
-            multiplicarCantidad = Convert.ToDouble(txtPproducto.Text) * Convert.ToDouble(txtCantidad.Text);
-
-            lblTsinIva.Text = multiplicarCantidad.ToString("0.00");
-
             //}
             //catch (Exception ex)
             //{
             //    MessageBox.Show("TUS DATOS NO SON NUMERICOS REVISA" + ex.ToString());
-
-            //AdministradorOperaciones administrador = new AdministradorOperaciones();
-            //ClsOperacionAdministrador cls1 = new ClsOperacionAdministrador();
-
-            //administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
-            //administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
-            //Double resultado1 = cls1.cal1(administrador);
-            //lblTsinIva.Text = resultado1.ToString();
             //lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
-
-            double sumarIva;
-
-            sumarIva = (Convert.ToDouble(txtPproducto.Text) * Convert.ToDouble(txtCantidad.Text)) + Convert.ToDouble(txtIva.Text);
-
-            lblTotalIniacial.Text = sumarIva.ToString("0.00");
-
-
-            String nombre;
-            nombre = txtNproducto.Text;
-            lblNombreProducto.Text = nombre;
-
-            //double iva;
-            //iva = Convert.ToDouble(txtIva.Text);
-            //lblMostrarIva.Text = iva.ToString ;
-
-
         }
 
 

@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgramacionUno.Dominio
 {
-    class UsuarioOperaciones
+    class UsuarioOperaciones : AdministradorOperaciones
     {
-     private const double iva = 0.13;
-     private const String nombreDelProducto = "LAPTOP";
-        private double precioDelProducto;
-        private int cantidad;
+        private double iva = 0.13;
+        private String nombreDelProducto = "LAPTOP";
+        //private double precioDelProducto;
+        //private int cantidad;
 
-        public static double Iva => iva;
 
-        public static string NombreDelProducto => nombreDelProducto;
-
-        public double PrecioDelProducto { get => precioDelProducto; set => precioDelProducto = value; }
-        public int Cantidad { get => cantidad; set => cantidad = value; }
+        //public double PrecioDelProducto { get => precioDelProducto; set => precioDelProducto = value; }
+        //public int Cantidad { get => cantidad; set => cantidad = value; }
+        public double Iva { get => iva; set => iva = value; }
+        public string NombreDelProducto { get => nombreDelProducto; set => nombreDelProducto = value; }
     }
 }  

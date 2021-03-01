@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgramacionUno.Negocio
 {
-    class ClsLogin
+    class ClsLoginUser
     {
         Login log = new Login();
         ClsListUsuarios Cls = new ClsListUsuarios();

@@ -20,9 +20,23 @@ namespace LaboratorioProgramacionUno.Negocio
 
         public Double cal2(AdministradorOperaciones administrador)
         {
-            Double total1 = (administrador.PrecioDelProducto * administrador.Cantidad);
+            Double total2 = (administrador.PrecioDelProducto * administrador.Cantidad) + (administrador.Iva * administrador.PrecioDelProducto);
 
-            return total1;
+            return total2;
+        }
+
+        public String cal3(AdministradorOperaciones administrador)
+        {
+            String nombreP = administrador.NombreDelProducto;
+
+            return nombreP ;
+        }
+
+        public double cal4(AdministradorOperaciones administrador)
+        {
+            double ivaAgregar = administrador.Iva * administrador.PrecioDelProducto;
+
+            return ivaAgregar;
         }
     }
 
