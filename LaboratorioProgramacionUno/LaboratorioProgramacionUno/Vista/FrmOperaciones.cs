@@ -40,10 +40,17 @@ namespace LaboratorioProgramacionUno.Vista
 
             administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
             administrador.Cantidad = Convert.ToInt32(value: txtCantidad.Text);
+            administrador.Iva = Convert.ToDouble(value: txtIva.Text);
+
             Double resultado1 = cls1.cal1(administrador);
             lblTsinIva.Text = resultado1.ToString();
-           
+           // lblTotalIniacial.Text = resultado1.ToString() = txtIva.ToString;
+
+
         }
+
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {

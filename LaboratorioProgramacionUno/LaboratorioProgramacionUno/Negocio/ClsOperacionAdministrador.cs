@@ -18,5 +18,12 @@ namespace LaboratorioProgramacionUno.Negocio
             return total1;
         }
 
+        public Double cal2(AdministradorOperaciones administrador)
+        {
+            Double total1 = (administrador.PrecioDelProducto * administrador.Cantidad);
+
+            return total1;
+        }
     }
+
 }
