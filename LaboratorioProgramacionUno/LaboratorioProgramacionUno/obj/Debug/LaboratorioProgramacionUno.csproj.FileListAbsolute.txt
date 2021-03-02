@@ -18,7 +18,6 @@ C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\Laborato
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.csproj.CoreCompileInputs.cache
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.exe
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.pdb
-C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLogin.resources
 C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.exe.config
 C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.exe
 C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\bin\Debug\LaboratorioProgramacionUno.pdb
@@ -38,3 +37,5 @@ C:\Users\crobe\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\Laborato
 C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLoginAdmin.resources
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLoginUsuario.resources
 C:\Users\veget\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmOpers.resources
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmLoginUsuario.resources
+C:\Users\carlj\Documents\GitHub\Laboratorio1\LaboratorioProgramacionUno\LaboratorioProgramacionUno\obj\Debug\LaboratorioProgramacionUno.Vista.FrmOpers.resources

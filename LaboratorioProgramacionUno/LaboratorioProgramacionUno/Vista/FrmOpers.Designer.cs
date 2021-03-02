@@ -243,7 +243,7 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             this.lblMostrarUser.AutoSize = true;
             this.lblMostrarUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMostrarUser.Location = new System.Drawing.Point(735, 1);
+            this.lblMostrarUser.Location = new System.Drawing.Point(779, 25);
             this.lblMostrarUser.Name = "lblMostrarUser";
             this.lblMostrarUser.Size = new System.Drawing.Size(0, 20);
             this.lblMostrarUser.TabIndex = 25;
@@ -252,7 +252,7 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(546, 9);
+            this.label2.Location = new System.Drawing.Point(578, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 24;
@@ -271,6 +271,7 @@ namespace LaboratorioProgramacionUno.Vista
             // 
             // FrmOpers
             // 
+            this.AcceptButton = this.btnCalcular;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(908, 515);
@@ -298,7 +299,7 @@ namespace LaboratorioProgramacionUno.Vista
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmOpers";
-            this.Text = "FrmOpers";
+            this.Text = "FrmOperaciones";
             this.Load += new System.EventHandler(this.FrmOpers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

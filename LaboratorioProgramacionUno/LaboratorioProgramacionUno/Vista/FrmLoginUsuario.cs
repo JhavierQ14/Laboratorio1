@@ -56,7 +56,7 @@ namespace LaboratorioProgramacionUno.Vista
               
             {
 
-                MessageBox.Show("Welcome");
+                MessageBox.Show("Welcome" + txtUsuario.Text);
                 FrmOpers frmM = new FrmOpers();
                 frmM.namePerson = txtUsuario.Text;
                 frmM.Show();

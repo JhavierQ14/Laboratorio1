@@ -85,8 +85,9 @@ namespace LaboratorioProgramacionUno.Vista
             this.btnAcceder.UseVisualStyleBackColor = true;
             this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
-            // FrmLogin
+            // FrmLoginUsuario
             // 
+            this.AcceptButton = this.btnAcceder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(840, 546);
@@ -97,7 +98,7 @@ namespace LaboratorioProgramacionUno.Vista
             this.Controls.Add(this.lblU);
             this.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "FrmLogin";
+            this.Name = "FrmLoginUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
