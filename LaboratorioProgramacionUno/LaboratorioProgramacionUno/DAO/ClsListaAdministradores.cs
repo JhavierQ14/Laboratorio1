@@ -10,7 +10,7 @@ namespace LaboratorioProgramacionUno.DAO
     {
         public string[] user = new string[2] { "Raquel", "Agustin" };
         public string[] pass = new string[2] { "123", "123" };
-        public string[] tipo = new string[1] { "Administrador"};
+        
 
     }
 }

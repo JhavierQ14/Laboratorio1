@@ -1,7 +1,7 @@
 ﻿
 namespace LaboratorioProgramacionUno.Vista
 {
-    partial class FrmLoginAdmin
+    partial class FrmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -32,8 +32,8 @@ namespace LaboratorioProgramacionUno.Vista
             this.btnAcceder = new System.Windows.Forms.Button();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lblC = new System.Windows.Forms.Label();
-            this.LblAdmin = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAcceder
@@ -63,31 +63,30 @@ namespace LaboratorioProgramacionUno.Vista
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(220, 31);
             this.txtUsuario.TabIndex = 7;
-            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
-            // lblC
+            // lbl2
             // 
-            this.lblC.AutoSize = true;
-            this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC.Location = new System.Drawing.Point(334, 228);
-            this.lblC.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(123, 25);
-            this.lblC.TabIndex = 6;
-            this.lblC.Text = "Contraseña";
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.Location = new System.Drawing.Point(334, 228);
+            this.lbl2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(123, 25);
+            this.lbl2.TabIndex = 6;
+            this.lbl2.Text = "Contraseña";
             // 
-            // LblAdmin
+            // lbl1
             // 
-            this.LblAdmin.AutoSize = true;
-            this.LblAdmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAdmin.Location = new System.Drawing.Point(350, 71);
-            this.LblAdmin.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
-            this.LblAdmin.Name = "LblAdmin";
-            this.LblAdmin.Size = new System.Drawing.Size(86, 25);
-            this.LblAdmin.TabIndex = 5;
-            this.LblAdmin.Text = "Usuario";
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(350, 71);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(86, 25);
+            this.lbl1.TabIndex = 5;
+            this.lbl1.Text = "Usuario";
             // 
-            // FrmLoginAdmin
+            // FrmLogin
             // 
             this.AcceptButton = this.btnAcceder;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,9 +95,9 @@ namespace LaboratorioProgramacionUno.Vista
             this.Controls.Add(this.btnAcceder);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
-            this.Controls.Add(this.lblC);
-            this.Controls.Add(this.LblAdmin);
-            this.Name = "FrmLoginAdmin";
+            this.Controls.Add(this.lbl2);
+            this.Controls.Add(this.lbl1);
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
             this.ResumeLayout(false);
@@ -111,7 +110,7 @@ namespace LaboratorioProgramacionUno.Vista
         private System.Windows.Forms.Button btnAcceder;
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.Label lblC;
-        private System.Windows.Forms.Label LblAdmin;
+        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.Label lbl1;
     }
 }

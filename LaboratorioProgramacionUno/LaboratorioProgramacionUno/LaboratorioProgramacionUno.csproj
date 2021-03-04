@@ -50,21 +50,14 @@
     <Compile Include="DAO\ClsListUsuarios.cs" />
     <Compile Include="Dominio\AdministradorOperaciones.cs" />
     <Compile Include="Dominio\Login.cs" />
-    <Compile Include="Dominio\UsuarioOperaciones.cs" />
+    <Compile Include="Dominio\Operaciones.cs" />
     <Compile Include="Negocio\ClsLoginAdmin.cs" />
-    <Compile Include="Negocio\ClsOperacionAdministrador.cs" />
-    <Compile Include="Negocio\ClsOperacionUsuario.cs" />
-    <Compile Include="Vista\FrmLoginUsuario.cs">
+    <Compile Include="Negocio\ClsOperacion.cs" />
+    <Compile Include="Vista\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\FrmLoginUsuario.Designer.cs">
-      <DependentUpon>FrmLoginUsuario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\FrmLoginAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\FrmLoginAdmin.Designer.cs">
-      <DependentUpon>FrmLoginAdmin.cs</DependentUpon>
+    <Compile Include="Vista\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\FrmMenu.cs">
       <SubType>Form</SubType>
@@ -81,17 +74,8 @@
     <Compile Include="Vista\FrmOperaciones.Designer.cs">
       <DependentUpon>FrmOperaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vista\FrmOpers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Vista\FrmOpers.Designer.cs">
-      <DependentUpon>FrmOpers.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="Vista\FrmLoginUsuario.resx">
-      <DependentUpon>FrmLoginUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\FrmLoginAdmin.resx">
-      <DependentUpon>FrmLoginAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
@@ -107,9 +91,6 @@
     </Compile>
     <EmbeddedResource Include="Vista\FrmOperaciones.resx">
       <DependentUpon>FrmOperaciones.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Vista\FrmOpers.resx">
-      <DependentUpon>FrmOpers.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaboratorioProgramacionUno.Dominio
 {
-    class UsuarioOperaciones
+    class Operaciones
     {
         private double iva;
         private String nombreDelProducto;

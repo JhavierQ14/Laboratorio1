@@ -19,17 +19,41 @@ namespace LaboratorioProgramacionUno.Vista
             InitializeComponent();
         }
         public String nombrePersona;
+        //public Boolean evaluarUsuario; verificar despues
         private void FrmOperaciones_Load(object sender, EventArgs e)
         {
-           
-            lblMostrarUser.Text = nombrePersona;
 
-            dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MENOR o IGUAL 50 NO TENDRA DESCUENTO", "<=50");
-            dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 50 Y MENOR QUE 100 TENDRA UN DESUENTO DEL 0.05 ", ">50 and <100");
-            dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL A 100 O MENOR QUE 101 TENDRA UN DESUENTO DEL 0.10 ", ">= 100 and <101");
-            dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL 101 Y MENOR QUE 150 TENDRA UN DESUENTO DEL 0.20 ", ">101 and <150");
-            dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 150 TENDRA UN DESUENTO DEL 0.50 ", ">150");
+            {
+                lblMostrarUser.Text = nombrePersona;
+            }
 
+            {
+                dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MENOR o IGUAL 50 NO TENDRA DESCUENTO", "<=50");
+                dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 50 Y MENOR QUE 100 TENDRA UN DESUENTO DEL 0.05 ", ">50 and <100");
+                dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL A 100 O MENOR QUE 101 TENDRA UN DESUENTO DEL 0.10 ", ">= 100 and <101");
+                dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR o IGUAL 101 Y MENOR QUE 150 TENDRA UN DESUENTO DEL 0.20 ", ">101 and <150");
+                dataGridView1.Rows.Add("SI EL PRODUCTO TIENE UN PRECIO MAYOR A 150 TENDRA UN DESUENTO DEL 0.50 ", ">150");
+            }
+
+            {
+                if (nombrePersona == "Carlos" || nombrePersona == "Eva")
+                {
+                    txtIva.Enabled = false;                             //Codigo provicional
+                    txtIva.Text = "0.13";
+                    txtNproducto.Enabled = false;
+                    txtNproducto.Text = "LAPTOP";
+                }
+            }
+
+            //if (evaluarUsuario == false)
+            //{
+            //    txtIva.Enabled = false;
+            //    txtIva.Text = "0.13";           POSIBLE BUG o mal logica ver despues
+            //    txtNproducto.Enabled = false;
+            //    txtNproducto.Text = "Laptop";
+
+            //}
+            //else {}
         }
 
 
@@ -37,8 +61,8 @@ namespace LaboratorioProgramacionUno.Vista
         {
 
             {
-                UsuarioOperaciones administrador = new UsuarioOperaciones();
-                ClsOperacionUsuario cls1 = new ClsOperacionUsuario();
+                Operaciones administrador = new Operaciones();
+                ClsOperacion cls1 = new ClsOperacion();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
@@ -47,8 +71,8 @@ namespace LaboratorioProgramacionUno.Vista
             }
 
             {
-                UsuarioOperaciones administrador = new UsuarioOperaciones();
-                ClsOperacionUsuario cls2 = new ClsOperacionUsuario();
+                Operaciones administrador = new Operaciones();
+                ClsOperacion cls2 = new ClsOperacion();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
@@ -57,16 +81,16 @@ namespace LaboratorioProgramacionUno.Vista
                 lblTotalIniacial.Text = resultado1.ToString("0.00");
             }
             {
-                UsuarioOperaciones administrador = new UsuarioOperaciones();
-                ClsOperacionUsuario cls3 = new ClsOperacionUsuario();
+                Operaciones administrador = new Operaciones();
+                ClsOperacion cls3 = new ClsOperacion();
 
                 administrador.NombreDelProducto = Convert.ToString(value: txtNproducto.Text);
                 String resultado1 = cls3.ca3(administrador);
                 lblNombreProducto.Text = resultado1.ToString();
             }
             {
-                UsuarioOperaciones administrador = new UsuarioOperaciones();
-                ClsOperacionUsuario cls4 = new ClsOperacionUsuario();
+                Operaciones administrador = new Operaciones();
+                ClsOperacion cls4 = new ClsOperacion();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
@@ -75,8 +99,8 @@ namespace LaboratorioProgramacionUno.Vista
             }
 
             {
-                UsuarioOperaciones administrador = new UsuarioOperaciones();
-                ClsOperacionUsuario cls5 = new ClsOperacionUsuario();
+                Operaciones administrador = new Operaciones();
+                ClsOperacion cls5 = new ClsOperacion();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
@@ -93,26 +117,26 @@ namespace LaboratorioProgramacionUno.Vista
                 else if (resultado1 >= 50 && resultado1 < 100)
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - 0.05;
+                    totalFinal = Convert.ToDouble(resultado1) - (0.05 * Convert.ToDouble(resultado1));
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
                 else if (resultado1 >= 100 && resultado1 < 101)
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - 0.10;
+                    totalFinal = Convert.ToDouble(resultado1) - (0.10 * Convert.ToDouble(resultado1));
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
                 }
                 else if (resultado1 >= 101 && resultado1 < 150)
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - 0.20;
+                    totalFinal = Convert.ToDouble(resultado1) - (0.20 * Convert.ToDouble(resultado1));
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
                 }
                 else 
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - 0.50;
+                    totalFinal = Convert.ToDouble(resultado1) - (0.50 * Convert.ToDouble(resultado1));
                     lblTotalFinal.Text = totalFinal.ToString("0.00");
 
                 }
@@ -120,10 +144,5 @@ namespace LaboratorioProgramacionUno.Vista
 
         }
 
-
-        private void label2_Click(object sender, EventArgs e)
-        {
- 
-        }
     }
 }

@@ -35,10 +35,10 @@ namespace LaboratorioProgramacionUno.Vista
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lblMostrarIva = new System.Windows.Forms.Label();
-            this.lblNproducto = new System.Windows.Forms.Label();
-            this.lblPproducto = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl5 = new System.Windows.Forms.Label();
+            this.lbl6 = new System.Windows.Forms.Label();
+            this.lbl7 = new System.Windows.Forms.Label();
             this.txtIva = new System.Windows.Forms.TextBox();
             this.txtNproducto = new System.Windows.Forms.TextBox();
             this.txtPproducto = new System.Windows.Forms.TextBox();
@@ -76,7 +76,6 @@ namespace LaboratorioProgramacionUno.Vista
             this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Usuario actual";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblMostrarUser
             // 
@@ -109,41 +108,41 @@ namespace LaboratorioProgramacionUno.Vista
             this.Column2.HeaderText = "REGLA";
             this.Column2.Name = "Column2";
             // 
-            // lblMostrarIva
+            // lbl4
             // 
-            this.lblMostrarIva.AutoSize = true;
-            this.lblMostrarIva.Location = new System.Drawing.Point(36, 293);
-            this.lblMostrarIva.Name = "lblMostrarIva";
-            this.lblMostrarIva.Size = new System.Drawing.Size(22, 13);
-            this.lblMostrarIva.TabIndex = 4;
-            this.lblMostrarIva.Text = "Iva";
+            this.lbl4.AutoSize = true;
+            this.lbl4.Location = new System.Drawing.Point(36, 293);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(22, 13);
+            this.lbl4.TabIndex = 4;
+            this.lbl4.Text = "Iva";
             // 
-            // lblNproducto
+            // lbl5
             // 
-            this.lblNproducto.AutoSize = true;
-            this.lblNproducto.Location = new System.Drawing.Point(36, 340);
-            this.lblNproducto.Name = "lblNproducto";
-            this.lblNproducto.Size = new System.Drawing.Size(117, 13);
-            this.lblNproducto.TabIndex = 5;
-            this.lblNproducto.Text = "Nombre del el producto";
+            this.lbl5.AutoSize = true;
+            this.lbl5.Location = new System.Drawing.Point(36, 340);
+            this.lbl5.Name = "lbl5";
+            this.lbl5.Size = new System.Drawing.Size(117, 13);
+            this.lbl5.TabIndex = 5;
+            this.lbl5.Text = "Nombre del el producto";
             // 
-            // lblPproducto
+            // lbl6
             // 
-            this.lblPproducto.AutoSize = true;
-            this.lblPproducto.Location = new System.Drawing.Point(36, 390);
-            this.lblPproducto.Name = "lblPproducto";
-            this.lblPproducto.Size = new System.Drawing.Size(99, 13);
-            this.lblPproducto.TabIndex = 6;
-            this.lblPproducto.Text = "Precio del producto";
+            this.lbl6.AutoSize = true;
+            this.lbl6.Location = new System.Drawing.Point(36, 390);
+            this.lbl6.Name = "lbl6";
+            this.lbl6.Size = new System.Drawing.Size(99, 13);
+            this.lbl6.TabIndex = 6;
+            this.lbl6.Text = "Precio del producto";
             // 
-            // lblCantidad
+            // lbl7
             // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Location = new System.Drawing.Point(36, 443);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(49, 13);
-            this.lblCantidad.TabIndex = 7;
-            this.lblCantidad.Text = "Cantidad";
+            this.lbl7.AutoSize = true;
+            this.lbl7.Location = new System.Drawing.Point(36, 443);
+            this.lbl7.Name = "lbl7";
+            this.lbl7.Size = new System.Drawing.Size(49, 13);
+            this.lbl7.TabIndex = 7;
+            this.lbl7.Text = "Cantidad";
             // 
             // txtIva
             // 
@@ -289,10 +288,10 @@ namespace LaboratorioProgramacionUno.Vista
             this.Controls.Add(this.txtPproducto);
             this.Controls.Add(this.txtNproducto);
             this.Controls.Add(this.txtIva);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.lblPproducto);
-            this.Controls.Add(this.lblNproducto);
-            this.Controls.Add(this.lblMostrarIva);
+            this.Controls.Add(this.lbl7);
+            this.Controls.Add(this.lbl6);
+            this.Controls.Add(this.lbl5);
+            this.Controls.Add(this.lbl4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblMostrarUser);
             this.Controls.Add(this.label2);
@@ -313,10 +312,10 @@ namespace LaboratorioProgramacionUno.Vista
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblMostrarUser;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lblMostrarIva;
-        private System.Windows.Forms.Label lblNproducto;
-        private System.Windows.Forms.Label lblPproducto;
-        private System.Windows.Forms.Label lblCantidad;
+        private System.Windows.Forms.Label lbl4;
+        private System.Windows.Forms.Label lbl5;
+        private System.Windows.Forms.Label lbl6;
+        private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.TextBox txtPproducto;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label8;

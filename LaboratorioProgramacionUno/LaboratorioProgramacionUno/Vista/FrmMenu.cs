@@ -18,36 +18,36 @@ namespace LaboratorioProgramacionUno
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-
-        {
-
-
-
-        }
-
+        
+   
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
-            FrmLoginUsuario frml = new FrmLoginUsuario();
+            //FrmOperaciones operacionesU = new FrmOperaciones();  verificar despues
+            //operacionesU.evaluarUsuario = true;
+            FrmLogin frml = new FrmLogin();
+            frml.rolUsuario = true;
             frml.Show();
             this.Hide();
-            {
-
-            }
 
         }
 
+        
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            FrmLoginAdmin frml = new FrmLoginAdmin();
+            
+            FrmLogin frml = new FrmLogin();
+            frml.rolAdministrador = true;
             frml.Show();
             this.Hide();           
             {
 
             }
-        }
 
+
+        }
     }
        
 }
+
+
 
