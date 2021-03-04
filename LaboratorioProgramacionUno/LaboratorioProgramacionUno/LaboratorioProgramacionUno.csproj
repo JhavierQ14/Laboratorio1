@@ -48,7 +48,6 @@
   <ItemGroup>
     <Compile Include="DAO\ClsListaAdministradores.cs" />
     <Compile Include="DAO\ClsListUsuarios.cs" />
-    <Compile Include="Dominio\AdministradorOperaciones.cs" />
     <Compile Include="Dominio\Login.cs" />
     <Compile Include="Dominio\Operaciones.cs" />
     <Compile Include="Negocio\ClsLoginAdmin.cs" />
