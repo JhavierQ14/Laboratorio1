@@ -67,7 +67,7 @@ namespace LaboratorioProgramacionUno.Vista
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
                 double resultado1 = cls1.ca1(administrador);
-                lblTsinIva.Text = resultado1.ToString("0.00");
+                lblTsinIva.Text = resultado1.ToString();
             }
 
             {
@@ -78,7 +78,7 @@ namespace LaboratorioProgramacionUno.Vista
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
                 double resultado1 = cls2.ca2(administrador);
-                lblTotalIniacial.Text = resultado1.ToString("0.00");
+                lblTotalIniacial.Text = resultado1.ToString();
             }
             {
                 Operaciones administrador = new Operaciones();
@@ -95,7 +95,7 @@ namespace LaboratorioProgramacionUno.Vista
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
                 double resultado1 = cls4.ca4(administrador);
-                lblIvaAgregar.Text = resultado1.ToString("0.00");
+                lblIvaAgregar.Text = resultado1.ToString();
             }
 
             {
@@ -103,41 +103,42 @@ namespace LaboratorioProgramacionUno.Vista
                 ClsOperacion cls5 = new ClsOperacion();
 
                 administrador.PrecioDelProducto = Convert.ToDouble(value: txtPproducto.Text);
+                double productoPrecio = administrador.PrecioDelProducto;
                 administrador.Cantidad = Convert.ToDouble(value: txtCantidad.Text);
                 administrador.Iva = Convert.ToDouble(value: txtIva.Text);
                 double resultado1 = cls5.ca2(administrador);
 
-                if (resultado1 <= 50)
+                if (productoPrecio <= 50)
                 {
                     double totalFinal;
                     totalFinal = Convert.ToDouble(resultado1);
-                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+                    lblTotalFinal.Text = totalFinal.ToString();
 
                 }
-                else if (resultado1 >= 50 && resultado1 < 100)
+                else if (productoPrecio > 50 && resultado1 < 100)
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - (0.05 * Convert.ToDouble(resultado1));
-                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+                    totalFinal = Convert.ToDouble(resultado1) - (0.05 * Convert.ToDouble(resultado1)); //Bug
+                    lblTotalFinal.Text = totalFinal.ToString();
 
                 }
-                else if (resultado1 >= 100 && resultado1 < 101)
+                else if (productoPrecio >= 100 && resultado1 < 101)
                 {
                     double totalFinal;
                     totalFinal = Convert.ToDouble(resultado1) - (0.10 * Convert.ToDouble(resultado1));
-                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+                    lblTotalFinal.Text = totalFinal.ToString();
                 }
-                else if (resultado1 >= 101 && resultado1 < 150)
+                else if (productoPrecio >= 101 && resultado1 < 150)
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - (0.20 * Convert.ToDouble(resultado1));
-                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+                    totalFinal = Convert.ToDouble(resultado1) - (0.20 * Convert.ToDouble(resultado1));  //bug
+                    lblTotalFinal.Text = totalFinal.ToString();
                 }
-                else 
+                else
                 {
                     double totalFinal;
-                    totalFinal = Convert.ToDouble(resultado1) - (0.50 * Convert.ToDouble(resultado1));
-                    lblTotalFinal.Text = totalFinal.ToString("0.00");
+                    totalFinal = Convert.ToDouble(resultado1) - (0.50 * Convert.ToDouble(resultado1)); //BUG
+                    lblTotalFinal.Text = totalFinal.ToString();
 
                 }
             }

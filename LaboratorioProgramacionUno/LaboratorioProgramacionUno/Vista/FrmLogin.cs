@@ -40,7 +40,7 @@ namespace LaboratorioProgramacionUno.Vista
                 if (evalucion == 1)
 
                 {
-                    MessageBox.Show("Welcome" + txtUsuario.Text);                    
+                    MessageBox.Show("Welcome  " + txtUsuario.Text);                    
                     FrmOperaciones frmM = new FrmOperaciones();
                     frmM.nombrePersona = txtUsuario.Text;
                     frmM.Show();
@@ -68,7 +68,7 @@ namespace LaboratorioProgramacionUno.Vista
 
                 {
 
-                    MessageBox.Show("Welcome" + txtUsuario.Text);
+                    MessageBox.Show("Welcome  " + txtUsuario.Text);
                     FrmOperaciones frmM = new FrmOperaciones();
                     frmM.nombrePersona = txtUsuario.Text;
                     frmM.Show();
